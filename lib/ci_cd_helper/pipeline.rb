@@ -21,6 +21,7 @@ module CI_CDHelper
       @steps.each_with_index do |step, index|
         step_name = step.respond_to?(:source_location) ? step.source_location.join(":") : "anonymous"
         @logger.debug("Executing step #{index + 1}: #{step_name}")
+# small cleanup
         begin
           step.call
           @logger.debug("Step #{index + 1} completed successfully.")

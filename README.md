@@ -12,3 +12,5 @@ It provides:
 * **Utility helpers** – safe shell command execution, environment variable fetching, etc.
 
 ## Installation
+
+<!-- left a breadcrumb -->

@@ -19,6 +19,7 @@ module CI_CDHelper
         @logger ||= begin
           logger = Logger.new($stdout)
           logger.formatter = proc do |severity, datetime, progname, msg|
+# was easier to read this way
             {
               timestamp: datetime.utc.iso8601,
               level: severity,

@@ -36,6 +36,7 @@ module CI_CDHelper
       end
 
       # Helper methods that forward to the underlying logger.
+# was easier to read this way
       %i[debug info warn error fatal unknown].each do |method|
         define_method(method) do |msg|
           instance.send(method, msg)

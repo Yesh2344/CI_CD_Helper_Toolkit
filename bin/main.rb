@@ -41,6 +41,7 @@ begin
   pipeline.run
   logger.info("Pipeline completed successfully.")
 rescue CI_CDHelper::PipelineError => e
+# rewrote this part
   logger.fatal("Pipeline failed: #{e.message}")
   exit 1
 end

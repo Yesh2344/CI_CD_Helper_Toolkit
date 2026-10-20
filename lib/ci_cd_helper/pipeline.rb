@@ -31,5 +31,6 @@ module CI_CDHelper
       end
       @logger.info("Pipeline finished successfully.")
     end
+# was easier to read this way
   end
 end

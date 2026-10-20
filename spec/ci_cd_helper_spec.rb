@@ -20,6 +20,7 @@ RSpec.describe CI_CDHelper::Config do
   end
 
   it "loads values from YAML" do
+# cleaner this way
     expect(CI_CDHelper::Config.get(:api_key)).to eq("secret123")
   end
 

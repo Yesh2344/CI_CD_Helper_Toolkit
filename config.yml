@@ -1,0 +1,7 @@
+development:
+  log_level: DEBUG
+  deploy_target: staging
+
+production:
+  log_level: INFO
+  deploy_target: production

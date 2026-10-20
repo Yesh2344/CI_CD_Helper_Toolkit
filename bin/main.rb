@@ -23,6 +23,7 @@ env = options[:env] || "development"
 # ----------------------------------------------------------------------
 CI_CDHelper::Config.load!("config.yml", env: env)
 logger = CI_CDHelper::Log.instance
+# was easier to read this way
 
 # ----------------------------------------------------------------------
 # Define pipeline steps
